@@ -1,0 +1,298 @@
+body {
+	background: #f4f4f4;
+	color: #555;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif; 
+	line-height: 1.2em;
+	margin: 0;
+}
+
+.clr{
+	clear: both;
+}
+@media (min-width: 669px){
+		.openbtn {
+			display: none;
+		}
+
+		.container2{
+	display: flex;
+	justify-content: space-between;
+		}
+
+}
+
+
+@media (max-width: 668px){
+	nav{
+		display: none;
+	}
+
+
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+
+
+.container2 div{
+	
+	padding:10px;
+	
+}
+
+.container2-box{
+	flex-basis: 30%;
+	background: #E2EBF6;
+	text-align: center;
+	
+}
+.container2-box i{
+	font-size: 60px;
+}
+
+
+
+header {
+	width: 100%;
+	background: #35424a;
+	top: 0;
+	position: fixed;
+	padding: 8px 0;
+	z-index: 90px;
+	border-bottom:3px #cf332a solid;
+
+} 
+header a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header ul{
+	padding: 0;
+	margin: 0;
+}
+
+header nav li {
+	list-style: none;
+	display: inline;
+	padding: 5px 20px 5px 20px;
+	background: transparent;
+	border:2px #fff solid;
+	border-radius: 5px 60px 5px;
+}
+header nav li:hover{
+	border:3px #e8491d solid;
+}
+
+header .highlight, .current a{
+	color: #e8491d;
+}
+
+.logo{
+	float: left;
+	color: #fff;
+	font-size: 35px;
+	font-weight: 700;
+
+}
+
+nav {
+	margin-top: 25px;
+	float: right;
+}
+
+.showcase{
+	padding-top: 150px;
+	min-height: 400px;
+	background:url(../images/bg2.jpg) no-repeat -1px 0;
+	text-align: center;
+	color: #E3E0E0;
+
+}
+.showcase h1{
+	font-size: 40px;
+}
+
+.profilepic{
+	width: 70px
+	height:70px;
+	
+}
+.profilepic img{
+	border:1px #e8491d solid;
+	border-radius: 100px;
+	width: 160px;
+	height: 160px;
+}
+
+.newsletter{
+	background:#35424a;
+	margin-top:0px;
+	padding:20px;
+}
+.newsletter form{
+	float: right;
+	padding-top: 15px;
+}
+.newsletter h1{
+	float: left;
+	color:#ccc;
+}
+.newsletter input[type='Email']{
+	padding: 4px;
+	height: 25px;
+	width: 259px;
+}
+
+.newsletterbutton{
+	width: auto;
+	background: #e8491d;
+	color: #fff;
+	height: 37px;
+	border-style: none;
+	border-radius: 2px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.social{
+	background:#35424a;
+	margin-top:0px;
+	color: #ccc;
+}
+.social h1{
+	float: left;
+}
+
+.social span{
+	margin-top: 5px;
+	padding: 10px;
+	float: right;
+	font-size: 22px;
+	border:2px #e8491d solid;
+	border-radius: 50px;
+}
+
+footer{
+	background: #e8491d;
+	color: #000;
+	padding: 10px;
+	text-align: center;
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #09121B; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background:transparent; 
+  color: #ccc;
+  padding: 4px 10px;
+  border: none;
+   margin-top: 16px; 
+   float: right;
+}
+
+.openbtn:hover {
+  color: #e8491d;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-right .5s; /* If you want a transition effect */
+ 
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+.genric-btn {
+    background-color:#09121B;
+    color:#A1A9B3;
+  display: inline-block;
+  outline: none;
+  line-height: 40px;
+  padding: 0 30px;
+  font-size: .8em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+
+.myslider{ width: 100%;
+    height: 300px;
+    
+}
+
+	
+
